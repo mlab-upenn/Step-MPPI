@@ -1,0 +1,7 @@
+map: "Spielberg_blank"
+planner:
+  dt: 0.05
+  N: 40
+  n_samples: 256
+  n_iterations: 1
+

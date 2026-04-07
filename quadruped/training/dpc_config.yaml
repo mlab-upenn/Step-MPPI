@@ -1,0 +1,30 @@
+dataset_path: datasets/dpc_dataset_2M.npz
+device: gpu
+policy:
+  num_layers: 5
+  hidden_dim: 256
+  activation: gelu
+
+train_params:
+  n_samples: 1000000
+  num_epochs: 100
+  steps_per_epoch: 500
+  batch_size: 128
+  lr: 1e-3
+  weight_decay: 1e-5
+  grad_clip: 1.0
+  log_every: 250
+  save_path: training/dpc_constrained_policy.pkl
+  save_every: 10
+
+  plateau_factor: 0.5
+  plateau_patience: 3
+  plateau_min_lr: 1e-6
+  plateau_threshold: 1e-4
+  plateau_cooldown: 0
+
+  eval_batch_size: 128
+  early_stop_patience: 10
+  early_stop_min_delta: 1e-4
+  seed: 0
+  eval_seed: 12

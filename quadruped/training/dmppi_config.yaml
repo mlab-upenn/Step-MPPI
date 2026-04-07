@@ -1,0 +1,41 @@
+dataset_path: datasets/dpc_dataset_2M.npz
+device: gpu
+
+policy:
+  num_layers: 5
+  hidden_dim: 256
+  activation: gelu
+  min_std: 1e-3
+  max_std: 1e2
+  max_fx: 30.0
+  max_fy: 30.0
+  max_fz: 241.68897
+
+dmppi:
+  dmppi_samples: 1024
+  dmppi_temperature: 1.0
+  alpha: 1e-2
+
+train_params:
+  n_samples: 100000
+  num_epochs: 100
+  steps_per_epoch: 500
+  batch_size: 64
+  lr: 1e-5
+  weight_decay: 1e-5
+  grad_clip: 1.0
+  log_every: 250
+  save_path: training/dmppi_constrained_policy.pkl
+  save_every: 10
+
+  plateau_factor: 0.5
+  plateau_patience: 3
+  plateau_min_lr: 1e-6
+  plateau_threshold: 1e-4
+  plateau_cooldown: 0
+
+  eval_batch_size: 64
+  early_stop_patience: 10
+  early_stop_min_delta: 1e-4
+  seed: 0
+  eval_seed: 12

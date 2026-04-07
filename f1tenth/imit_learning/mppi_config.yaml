@@ -1,0 +1,30 @@
+map: "Spielberg"
+planner:
+  dt: 0.05
+  N: 40
+  expert:
+    n_samples: 65536
+    n_iterations: 1
+  learner:
+    n_samples: 256
+    n_iterations: 1
+
+dagger:
+  iters: 6
+  max_steps: 5000
+  beta_0: 1.0
+  beta_decay: 0.7
+  beta_min: 0.05
+  dataset_path: "dagger_dataset.npz"
+  ckpt_path: "trained_dagger.pt"
+
+  train_params:
+    batch_size: 256
+    epochs: 300
+    lr: 1e-4
+    val_frac: 0.1
+    print_after_epoch: 50
+    seed: 0
+    plateau_patience: 50
+    early_stop_patience: 50
+    early_stop_min_delta: 1e-6

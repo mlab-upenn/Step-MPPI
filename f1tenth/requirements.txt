@@ -1,0 +1,9 @@
+numpy
+matplotlib
+cvxpy
+cvxpylayers
+gurobipy
+ipykernel
+scipy
+wandb
+tqdm
