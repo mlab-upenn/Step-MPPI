@@ -41,4 +41,4 @@ For questions or collaborations, please contact the authors:
 
 ## Acknowledgments
 
-- Uses forked versions of [F1Tenth Gym](https://github.com/vietanhle0101/f1tenth_gym) and [Quadruped-PyMPC](https://github.com/vietanhle0101/Quadruped-PyMPC)
+- Uses forked versions of [F1Tenth Gym](https://github.com/f1tenth/f1tenth_gym) and [Quadruped-PyMPC](https://github.com/iit-DLSLab/Quadruped-PyMPC)
