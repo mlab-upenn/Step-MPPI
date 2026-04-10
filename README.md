@@ -25,11 +25,11 @@ For detailed installation instructions and how to run the examples, please refer
 If you use this code in your research, please cite:
 
 ```
-@misc{step-mppi-2024,
-  title={Step-MPPI: A Learning-to-Optimize Framework for Model Predictive Path Integral Control},
-  author={Your Name},
-  year={2024},
-  url={https://github.com/your-repo/Step-MPPI}
+@article{le2026toward,
+  title={Toward Single-Step MPPI via Differentiable Predictive Control},
+  author={Le, Viet-Anh and Tumu, Renukanandan and Mangharam, Rahul},
+  journal={arXiv preprint arXiv:2604.01539},
+  year={2026}
 }
 ```
 
